@@ -23,9 +23,9 @@ Required Libraries
 ------------------
 jQuery 1.8.3
 
-AngularJS 1.0.7
+AngularJS 1.0.8
 
-MomentJS 2.0.0
+MomentJS 2.3.1
 
 Meekro 2.1
 
@@ -45,14 +45,16 @@ Tasks table:
 	CREATE TABLE `tasks` (
 	  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
 	  `type` varchar(40) NOT NULL DEFAULT '',
-	  `daypart` varchar(20) NOT NULL DEFAULT '',
-	  `mon` tinyint(1) NOT NULL DEFAULT '1',
-	  `tue` tinyint(1) NOT NULL DEFAULT '1',
-	  `wed` tinyint(1) NOT NULL DEFAULT '1',
-	  `thu` tinyint(1) NOT NULL DEFAULT '1',
-	  `fri` tinyint(1) NOT NULL DEFAULT '1',
-	  `sat` tinyint(1) NOT NULL DEFAULT '1',
-	  `sun` tinyint(1) NOT NULL DEFAULT '1',
+	  `mon` tinyint(1) NOT NULL DEFAULT '0',
+	  `tue` tinyint(1) NOT NULL DEFAULT '0',
+	  `wed` tinyint(1) NOT NULL DEFAULT '0',
+	  `thu` tinyint(1) NOT NULL DEFAULT '0',
+	  `fri` tinyint(1) NOT NULL DEFAULT '0',
+	  `sat` tinyint(1) NOT NULL DEFAULT '0',
+	  `sun` tinyint(1) NOT NULL DEFAULT '0',
+	  `open` tinyint(1) NOT NULL DEFAULT '0',
+	  `midday` tinyint(1) NOT NULL DEFAULT '0',
+	  `close` tinyint(1) NOT NULL DEFAULT '0',
 	  PRIMARY KEY (`id`)
 	) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
